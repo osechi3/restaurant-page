@@ -90,10 +90,23 @@
 /*!**********************!*\
   !*** ./src/index.js ***!
   \**********************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-eval("\n\n//# sourceURL=webpack:///./src/index.js?");
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _pageLoad__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./pageLoad */ \"./src/pageLoad.js\");\n\nObject(_pageLoad__WEBPACK_IMPORTED_MODULE_0__[\"mainPage\"])();\n\n//# sourceURL=webpack:///./src/index.js?");
+
+/***/ }),
+
+/***/ "./src/pageLoad.js":
+/*!*************************!*\
+  !*** ./src/pageLoad.js ***!
+  \*************************/
+/*! exports provided: mainPage */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"mainPage\", function() { return mainPage; });\nconst mainPage = () => {\n\n    const mainContainer = document.querySelector('#content');\n\n    const header = () => {\n        const header = document.createElement('div');\n        header.setAttribute('id', 'header');\n\n        const title = document.createElement('h1');\n        title.textContent = 'nut Shop';\n        // I need to put the picture exactly after the first letter\n        title.insertAdjacentHTML('afterbegin', `D<img src='https://pluspng.com/img-png/kawaii-donut-png-click-on-images-to-enlarge-and-download-643.png' alt='Donut' height='60px'>`)\n\n        mainContainer.appendChild(header);\n        header.appendChild(title);\n    }\n\n    const navBar = () => {\n        const navBar = document.createElement('div');\n        navBar.setAttribute('id', 'nav-bar');\n        navBar.textContent = 'test';\n        mainContainer.appendChild(navBar);\n    }\n\n    const tabContent = () => {\n        const tabContent = document.createElement('div');\n        tabContent.setAttribute('id', 'tab-content');\n\n        const img = document.createElement('img');\n        img.setAttribute('id', 'about-pic');\n        img.setAttribute('src', `https://res.cloudinary.com/sagacity/image/upload/c_crop,h_2737,w_4032,x_0,y_0/c_limit,dpr_auto,f_auto,fl_lossy,q_80,w_1080/IMG_20190311_070540_ngteek.jpg`);\n        img.setAttribute('height', '300px');\n\n        const aboutText = document.createElement('p');\n        aboutText.textContent = 'Hershey\\'s oldest freestanding restaurant. A local favorite for 83+ years. Featuring our famous DeAngelis spaghetti sauces and our famous Upside Down pizza. Homemade, delicious Italian dishes, featuring seafood, steaks, and pasta. Full pub menu and sandwich selection. Full menu offered all day and late night. Full bar with entertainment on weekends. Home to the stars, cast parties and celebrities from the Hershey Theatre. Conveniently located on Chocolate Avenue, directly across from the Hershey Story Museum.';\n\n        mainContainer.appendChild(tabContent);\n        tabContent.appendChild(img);\n        tabContent.appendChild(aboutText);\n    }\n    \nheader();\nnavBar();\ntabContent();\n};\n\n\n//# sourceURL=webpack:///./src/pageLoad.js?");
 
 /***/ })
 
