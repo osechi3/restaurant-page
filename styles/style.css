@@ -78,3 +78,18 @@ h1 {
     transition: .3s;
     background-color: #F42A88;
 }
+#menu-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.menu-items {
+    outline: 1px solid;
+    width: 270px;
+    height: 270px;
+    margin: 20px 0;
+}
+.items-img {
+    height: 270px;
+    width: 270px;
+}

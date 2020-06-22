@@ -13,13 +13,13 @@ const mainPage = () => {
 
         mainContainer.appendChild(header);
         header.appendChild(title);
-    }
+    };
 
     const navBar = () => {
         const navBar = document.createElement('div');
         navBar.setAttribute('id', 'nav-bar');
         mainContainer.appendChild(navBar);
-    }
+    };
 
     const navBarContents = () => {
         const navBarContainer = document.querySelector('#nav-bar');
@@ -29,10 +29,12 @@ const mainPage = () => {
             element.textContent = 'test1';
             navBarContainer.appendChild(element);
         }
+        navBarContainer.firstElementChild.setAttribute('id', 'nav-element1');
+        navBarContainer.lastElementChild.setAttribute('id', 'nav-element2');
 
         navBarContainer.firstElementChild.textContent = 'Menu';
         navBarContainer.lastElementChild.textContent = 'Contact';
-    }
+    };
 
     const tabContent = () => {
         const tabContent = document.createElement('div');
@@ -50,11 +52,11 @@ const mainPage = () => {
         mainContainer.appendChild(tabContent);
         tabContent.appendChild(img);
         tabContent.appendChild(aboutText);
-    }
+    };
     
 header();
 navBar();
 tabContent();
 navBarContents();
 };
-export {mainPage}
+export {mainPage};
