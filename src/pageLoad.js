@@ -18,8 +18,20 @@ const mainPage = () => {
     const navBar = () => {
         const navBar = document.createElement('div');
         navBar.setAttribute('id', 'nav-bar');
-        navBar.textContent = 'test';
         mainContainer.appendChild(navBar);
+    }
+
+    const navBarContents = () => {
+        const navBarContainer = document.querySelector('#nav-bar');
+        for (let i = 0; i < 2; i++) {
+            const element = document.createElement('div');
+            element.classList.add('nav-element');
+            element.textContent = 'test1';
+            navBarContainer.appendChild(element);
+        }
+
+        navBarContainer.firstElementChild.textContent = 'Menu';
+        navBarContainer.lastElementChild.textContent = 'Contact';
     }
 
     const tabContent = () => {
@@ -43,5 +55,6 @@ const mainPage = () => {
 header();
 navBar();
 tabContent();
+navBarContents();
 };
 export {mainPage}

@@ -28,7 +28,13 @@ html, body {
 h1 {
     margin: 0;
 }
+#header:hover {
+    transform: translateY(-10%);
+    background-color: #ADADFF;
+    transition: .1s;
+}
 #nav-bar {
+    display: flex;
     position: fixed;
     transform: translateY(-15%);
     left: 50%;
@@ -38,6 +44,7 @@ h1 {
     height: 70px;
     border: 1px transparent;
     border-radius: 15px;
+    justify-content: space-between;
 }
 #tab-content {
     background-color: #F4D67B;
@@ -54,4 +61,20 @@ h1 {
     margin: 10px 0;
     border: 5px solid #F1CA55;
     border-radius: 10%;
+}
+.nav-element {
+    display: flex;
+    background-color: inherit;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 64px;
+    margin: 0 10px;
+    padding-top: 5px;
+    font-size: 25px;
+    color: #F8F7FF;
+}
+.nav-element:hover {
+    transition: .3s;
+    background-color: #F42A88;
 }
