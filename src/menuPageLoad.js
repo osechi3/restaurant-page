@@ -11,7 +11,7 @@ const menuPage = () => {
             while (menuContainer.childNodes.length < 9) {
                 const menuItem = document.createElement('div');
                 menuItem.classList.add('menu-items');
-                menuItem.setAttribute('id',`donut-${menuContainer.childNodes.length + 1}`);
+                menuItem.setAttribute('data-order',`${menuContainer.childNodes.length}`);
 
                 const img = document.createElement('img');
                 img.setAttribute('src', `https://healthyfitnessmeals.com/wp-content/uploads/2018/06/instagram-In-Stream_Square___banana-protein-donuts-3.jpg`);
