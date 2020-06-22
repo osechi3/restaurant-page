@@ -9,7 +9,7 @@ const mainPage = () => {
         const title = document.createElement('h1');
         title.textContent = 'nut Shop';
         // I need to put the picture exactly after the first letter
-        title.insertAdjacentHTML('afterbegin', `D<img src='https://pluspng.com/img-png/kawaii-donut-png-click-on-images-to-enlarge-and-download-643.png' alt='Donut' height='60px'>`)
+        title.insertAdjacentHTML('afterbegin', `D<img src='https://pluspng.com/img-png/kawaii-donut-png-click-on-images-to-enlarge-and-download-643.png' alt='Donut' height='55px'>`)
 
         mainContainer.appendChild(header);
         header.appendChild(title);
@@ -25,6 +25,7 @@ const mainPage = () => {
     const tabContent = () => {
         const tabContent = document.createElement('div');
         tabContent.setAttribute('id', 'tab-content');
+        tabContent.textContent = 'test';
 
         const img = document.createElement('img');
         img.setAttribute('id', 'about-pic');
