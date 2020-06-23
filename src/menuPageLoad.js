@@ -61,12 +61,19 @@ const menuPage = () => {
     const tabContent = document.querySelector('#tab-content');
 
     const createMenuContainer = () => {
+        const menuHeader = document.createElement('div');
         const menuContainer = document.createElement('div');
 
+        menuHeader.setAttribute('id', 'menu-header')
+        menuHeader.textContent = 'Menu';
         menuContainer.setAttribute('id', 'menu-container');
+
+        tabContent.appendChild(menuHeader);
         tabContent.appendChild(menuContainer);
 
         const createMenuItems = () => {
+
+            // Creating 9 containers with images of donuts inside
             while (menuContainer.childNodes.length < 9) {
                 
                 const menuItem = document.createElement('div');
