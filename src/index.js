@@ -1,5 +1,6 @@
 import {mainPage, mainPageContent} from './mainPageLoad'
 import{menuPage} from './menuPageLoad';
+import{contactPage} from './contactPageLoad';
 mainPage();
 
 const navElement1 = document.querySelector('#nav-element1');
@@ -13,6 +14,12 @@ header.addEventListener('click', () => {
     resetTabContent();
     mainPageContent();
 })
+
+const navElement2 = document.querySelector('#nav-element2');
+navElement2.addEventListener('click', () => {
+    resetTabContent();
+    contactPage();
+});
 
 function resetTabContent() {
     const tabContent = document.querySelector('#tab-content');
