@@ -52,16 +52,21 @@ navBarContents();
 const mainPageContent = () => {
     const tabContent = document.querySelector('#tab-content');
 
+    const slogan = document.createElement('p');
     const img = document.createElement('img');
-    img.setAttribute('id', 'about-pic');
+    const shopDescription = document.createElement('p');
+
+    slogan.setAttribute('id', 'slogan');
+    img.setAttribute('id', 'main-page-pic');
     img.setAttribute('src', `https://res.cloudinary.com/sagacity/image/upload/c_crop,h_2737,w_4032,x_0,y_0/c_limit,dpr_auto,f_auto,fl_lossy,q_80,w_1080/IMG_20190311_070540_ngteek.jpg`);
-    img.setAttribute('height', '300px');
+    shopDescription.setAttribute('id', 'shop-description');
 
-    const aboutText = document.createElement('p');
-    aboutText.textContent = 'Hershey\'s oldest freestanding restaurant. A local favorite for 83+ years. Featuring our famous DeAngelis spaghetti sauces and our famous Upside Down pizza. Homemade, delicious Italian dishes, featuring seafood, steaks, and pasta. Full pub menu and sandwich selection. Full menu offered all day and late night. Full bar with entertainment on weekends. Home to the stars, cast parties and celebrities from the Hershey Theatre. Conveniently located on Chocolate Avenue, directly across from the Hershey Story Museum.';
+    slogan.textContent = 'Good Donuts for Good Moments.';
+    shopDescription.textContent = 'The Donut Shop lovingly hand crafts unique, artisan donuts with a delightful mix of premium ingredients, creative donut design and affordable prices. Donuts are fun. They should also be truly delicious and ultra fresh. How fresh? We make them several times each day. Treat yourself and experience the best donuts in Wisconsin.';
 
+    tabContent.appendChild(slogan);
     tabContent.appendChild(img);
-    tabContent.appendChild(aboutText);
+    tabContent.appendChild(shopDescription);
 }
 
 export {mainPage, mainPageContent};

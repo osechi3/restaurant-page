@@ -55,13 +55,23 @@ h1 {
     font-size: 20px;
     border: 5px solid #F0C442;
 }
-#tab-content p {
-    text-align: justify;
+#slogan {
+    width: 560px;
+    margin: 25px auto;
+    border-bottom: 1px solid;
+    font-size: 32px;
+    text-align: center;
 }
-#about-pic {
+#main-page-pic {
+    height: 315px;
     margin: 10px 0;
     border: 5px solid #F1CA55;
     border-radius: 10%;
+}
+#shop-description {
+    text-align: justify;
+    margin: 10px 15px;
+    font-size: 22px;
 }
 .nav-element {
     display: flex;
