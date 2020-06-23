@@ -102,7 +102,7 @@ h1 {
     border-radius: 25px;
 }
 .item-hover {
-    opacity: .3;
+    opacity: .15;
 }
 .item-info {
     position: absolute;

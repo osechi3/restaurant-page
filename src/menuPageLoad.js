@@ -5,49 +5,49 @@ const menuPage = () => {
             name: 'Rainbow Donut',
             image: '/img/rainbow-donut.jpg',
             price: '$6',
-            description: 'test'
+            description: 'These colourful tasty treats are great for adults and children alike!'
         },
         {
             name: 'Strawberry Donut',
             image: '/img/strawberry-donut.jpg',
             price: '$5',
-            description: 'test'
+            description: 'Oven baked and brimming with bright, sweet strawberry flavor.'
         },
         {
             name: 'Chocolate Donut',
             image: '/img/chocolate-donut.jpg',
             price: '$3',
-            description: 'test'
+            description: 'Perfect for breakfast or a sweet treat.'
         },
         {
             name: 'Double-Bubble Donut',
             image: '/img/double-bubble-donut.jpg',
             price: '$7',
-            description: 'test'
+            description: 'Just remember to eat the donut BEFORE the bubblegum.'
         },
         {
             name: 'Banana Protein Donut',
             image: '/img/banana-protein-donut.jpg',
             price: '$5',
-            description: 'test'
+            description: 'These are healthy, protein-packed and topped with a delicious chocolate glaze.'
         },
         {
             name: 'Protein Donut',
             image: '/img/protein-donut.jpg', 
             price: '$4',
-            description: 'test'
+            description: 'These are perfect for people who have a serious sweet tooth but want to eat healthy.'
         },
         {
             name: 'Banana Donut',
             image: '/img/banana-donut.jpg',
             price: '$4',
-            description: 'test'
+            description: 'These have all the things you love about banana bread in a freshly baked donut.'
         },
         {
             name: 'Caramel Donut',
             image: '/img/caramel-donut.jpg',
             price: '$5',
-            description: 'test'
+            description: 'These are a must-try! They are tender and yummy.'
         },
         {
             name: 'Bitten Donut :(',
@@ -107,7 +107,7 @@ const menuPage = () => {
             const text3 = document.createElement('div');
             text3.textContent = donuts[item.dataset.order].description;
             text3.classList.add('item-info');
-            text3.style.cssText = 'top: 70%; left: 50%; transform: translate(-50%, -50%);';
+            text3.style.cssText = 'top: 75%; left: 50%; transform: translate(-50%, -50%);';
             item.appendChild(text3);
         });
 
