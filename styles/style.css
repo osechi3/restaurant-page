@@ -103,6 +103,7 @@ h1 {
 }
 .item-hover {
     opacity: .15;
+    transition: .5s;
 }
 .item-info {
     position: absolute;

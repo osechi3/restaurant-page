@@ -39,24 +39,29 @@ const mainPage = () => {
     const tabContent = () => {
         const tabContent = document.createElement('div');
         tabContent.setAttribute('id', 'tab-content');
-        tabContent.textContent = 'test';
-
-        const img = document.createElement('img');
-        img.setAttribute('id', 'about-pic');
-        img.setAttribute('src', `https://res.cloudinary.com/sagacity/image/upload/c_crop,h_2737,w_4032,x_0,y_0/c_limit,dpr_auto,f_auto,fl_lossy,q_80,w_1080/IMG_20190311_070540_ngteek.jpg`);
-        img.setAttribute('height', '300px');
-
-        const aboutText = document.createElement('p');
-        aboutText.textContent = 'Hershey\'s oldest freestanding restaurant. A local favorite for 83+ years. Featuring our famous DeAngelis spaghetti sauces and our famous Upside Down pizza. Homemade, delicious Italian dishes, featuring seafood, steaks, and pasta. Full pub menu and sandwich selection. Full menu offered all day and late night. Full bar with entertainment on weekends. Home to the stars, cast parties and celebrities from the Hershey Theatre. Conveniently located on Chocolate Avenue, directly across from the Hershey Story Museum.';
-
         mainContainer.appendChild(tabContent);
-        tabContent.appendChild(img);
-        tabContent.appendChild(aboutText);
     };
     
 header();
 navBar();
 tabContent();
+mainPageContent();
 navBarContents();
 };
-export {mainPage};
+
+const mainPageContent = () => {
+    const tabContent = document.querySelector('#tab-content');
+
+    const img = document.createElement('img');
+    img.setAttribute('id', 'about-pic');
+    img.setAttribute('src', `https://res.cloudinary.com/sagacity/image/upload/c_crop,h_2737,w_4032,x_0,y_0/c_limit,dpr_auto,f_auto,fl_lossy,q_80,w_1080/IMG_20190311_070540_ngteek.jpg`);
+    img.setAttribute('height', '300px');
+
+    const aboutText = document.createElement('p');
+    aboutText.textContent = 'Hershey\'s oldest freestanding restaurant. A local favorite for 83+ years. Featuring our famous DeAngelis spaghetti sauces and our famous Upside Down pizza. Homemade, delicious Italian dishes, featuring seafood, steaks, and pasta. Full pub menu and sandwich selection. Full menu offered all day and late night. Full bar with entertainment on weekends. Home to the stars, cast parties and celebrities from the Hershey Theatre. Conveniently located on Chocolate Avenue, directly across from the Hershey Story Museum.';
+
+    tabContent.appendChild(img);
+    tabContent.appendChild(aboutText);
+}
+
+export {mainPage, mainPageContent};
