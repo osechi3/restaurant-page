@@ -86,6 +86,18 @@
 /************************************************************************/
 /******/ ({
 
+/***/ "./src/contactPageLoad.js":
+/*!********************************!*\
+  !*** ./src/contactPageLoad.js ***!
+  \********************************/
+/*! exports provided: contactPage */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"contactPage\", function() { return contactPage; });\nconst contactPage = () => {\n\n    const tabContent = document.querySelector('#tab-content');\n\n    const title = document.createElement('h1');\n    const infoContainer = document.createElement('div');\n\n    title.textContent = 'Contact Us!';\n    title.setAttribute('id', 'contact-title');\n    infoContainer.setAttribute('id', 'info-container');\n\n    tabContent.appendChild(title);\n    tabContent.appendChild(infoContainer);\n\n    const contactPageContent = () => {\n        const address = document.createElement('div');\n        const email = document.createElement('div');\n        const phone = document.createElement('div');\n        const contactImg = document.createElement('img');\n\n        address.style.cssText = 'flex-basis: 100%; padding-bottom: 25px;'; // moving the other 2 elements onto the next row\n        contactImg.setAttribute('id', 'contact-img');\n        contactImg.setAttribute('src', `https://media3.s-nbcnews.com/j/newscms/2019_11/2781946/190311-billy-by-donut-shop-cs-347p_fd4688e43a8514c2fae22ffceeb2e9a1.social_share_1024x768_scale.jpg`);\n        contactImg.setAttribute('alt', 'Shop owners (not really)');\n\n        address.innerHTML = `<span style=\"font-size: 34px;\">Adress:</span></br> 2977  Johnny Lane, Milwaukee, Wisconsin`;\n        email.innerHTML = `<span style=\"font-size: 34px;\">Email:</span></br> donut-shop@gmail.com`;\n        phone.innerHTML = `<span style=\"font-size: 34px;\">Phone:</span></br> +09531257688`;\n\n        infoContainer.appendChild(address);\n        infoContainer.appendChild(email);\n        infoContainer.appendChild(phone);\n        infoContainer.appendChild(contactImg);\n    }\n    contactPageContent();\n}\n\n\n//# sourceURL=webpack:///./src/contactPageLoad.js?");
+
+/***/ }),
+
 /***/ "./src/index.js":
 /*!**********************!*\
   !*** ./src/index.js ***!
@@ -94,7 +106,7 @@
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _mainPageLoad__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./mainPageLoad */ \"./src/mainPageLoad.js\");\n/* harmony import */ var _menuPageLoad__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./menuPageLoad */ \"./src/menuPageLoad.js\");\n\n\nObject(_mainPageLoad__WEBPACK_IMPORTED_MODULE_0__[\"mainPage\"])();\n\nconst navElement1 = document.querySelector('#nav-element1');\nnavElement1.addEventListener('click', () => {\n    resetTabContent();\n    Object(_menuPageLoad__WEBPACK_IMPORTED_MODULE_1__[\"menuPage\"])();\n});\n\nconst header = document.querySelector('#header');\nheader.addEventListener('click', () => {\n    resetTabContent();\n    Object(_mainPageLoad__WEBPACK_IMPORTED_MODULE_0__[\"mainPageContent\"])();\n})\n\nfunction resetTabContent() {\n    const tabContent = document.querySelector('#tab-content');\n    while (tabContent.childNodes.length > 0) {\n        tabContent.removeChild(tabContent.lastChild);\n    }\n}\n\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _mainPageLoad__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./mainPageLoad */ \"./src/mainPageLoad.js\");\n/* harmony import */ var _menuPageLoad__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./menuPageLoad */ \"./src/menuPageLoad.js\");\n/* harmony import */ var _contactPageLoad__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./contactPageLoad */ \"./src/contactPageLoad.js\");\n\n\n\nObject(_mainPageLoad__WEBPACK_IMPORTED_MODULE_0__[\"mainPage\"])();\n\nconst navElement1 = document.querySelector('#nav-element1');\nnavElement1.addEventListener('click', () => {\n    resetTabContent();\n    Object(_menuPageLoad__WEBPACK_IMPORTED_MODULE_1__[\"menuPage\"])();\n});\n\nconst header = document.querySelector('#header');\nheader.addEventListener('click', () => {\n    resetTabContent();\n    Object(_mainPageLoad__WEBPACK_IMPORTED_MODULE_0__[\"mainPageContent\"])();\n})\n\nconst navElement2 = document.querySelector('#nav-element2');\nnavElement2.addEventListener('click', () => {\n    resetTabContent();\n    Object(_contactPageLoad__WEBPACK_IMPORTED_MODULE_2__[\"contactPage\"])();\n});\n\nfunction resetTabContent() {\n    const tabContent = document.querySelector('#tab-content');\n    while (tabContent.childNodes.length > 0) {\n        tabContent.removeChild(tabContent.lastChild);\n    }\n}\n\n\n//# sourceURL=webpack:///./src/index.js?");
 
 /***/ }),
 
