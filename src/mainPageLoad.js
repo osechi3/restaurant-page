@@ -59,6 +59,7 @@ const mainPageContent = () => {
     slogan.setAttribute('id', 'slogan');
     img.setAttribute('id', 'main-page-pic');
     img.setAttribute('src', `https://res.cloudinary.com/sagacity/image/upload/c_crop,h_2737,w_4032,x_0,y_0/c_limit,dpr_auto,f_auto,fl_lossy,q_80,w_1080/IMG_20190311_070540_ngteek.jpg`);
+    img.setAttribute('alt', 'the interior of our donut shop')
     shopDescription.setAttribute('id', 'shop-description');
 
     slogan.textContent = 'Good Donuts for Good Moments.';
