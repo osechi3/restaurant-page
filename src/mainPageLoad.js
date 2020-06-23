@@ -26,7 +26,6 @@ const mainPage = () => {
         for (let i = 0; i < 2; i++) {
             const element = document.createElement('div');
             element.classList.add('nav-element');
-            element.textContent = 'test1';
             navBarContainer.appendChild(element);
         }
         navBarContainer.firstElementChild.setAttribute('id', 'nav-element1');
