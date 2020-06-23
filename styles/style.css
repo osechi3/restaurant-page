@@ -137,8 +137,7 @@ h1 {
 
 
 #contact-title {
-    margin-top: 15px;
-    margin-bottom: 25px;
+    margin: 25px 0;
 }
 #info-container {
     display: flex;
