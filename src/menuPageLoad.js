@@ -3,55 +3,55 @@ const menuPage = () => {
     const donuts = [
         {
             name: 'Rainbow Donut',
-            image: '/img/rainbow-donut.jpg',
+            image: 'img/rainbow-donut.jpg',
             price: '$6',
             description: 'These colourful tasty treats are great for adults and children alike!'
         },
         {
             name: 'Strawberry Donut',
-            image: '/img/strawberry-donut.jpg',
+            image: 'img/strawberry-donut.jpg',
             price: '$5',
             description: 'Oven baked and brimming with bright, sweet strawberry flavor.'
         },
         {
             name: 'Chocolate Donut',
-            image: '/img/chocolate-donut.jpg',
+            image: 'img/chocolate-donut.jpg',
             price: '$3',
             description: 'Perfect for breakfast or a sweet treat.'
         },
         {
             name: 'Double-Bubble Donut',
-            image: '/img/double-bubble-donut.jpg',
+            image: 'img/double-bubble-donut.jpg',
             price: '$7',
             description: 'Just remember to eat the donut BEFORE the bubblegum.'
         },
         {
             name: 'Banana Protein Donut',
-            image: '/img/banana-protein-donut.jpg',
+            image: 'img/banana-protein-donut.jpg',
             price: '$5',
             description: 'These are healthy, protein-packed and topped with a delicious chocolate glaze.'
         },
         {
             name: 'Protein Donut',
-            image: '/img/protein-donut.jpg', 
+            image: 'img/protein-donut.jpg', 
             price: '$4',
             description: 'These are perfect for people who have a serious sweet tooth but want to eat healthy.'
         },
         {
             name: 'Banana Donut',
-            image: '/img/banana-donut.jpg',
+            image: 'img/banana-donut.jpg',
             price: '$4',
             description: 'These have all the things you love about banana bread in a freshly baked donut.'
         },
         {
             name: 'Caramel Donut',
-            image: '/img/caramel-donut.jpg',
+            image: 'img/caramel-donut.jpg',
             price: '$5',
             description: 'These are a must-try! They are tender and yummy.'
         },
         {
             name: 'Bitten Donut :(',
-            image: '/img/bitten-donut.jpg',
+            image: 'img/bitten-donut.jpg',
             price: '$1',
             description: 'I shouldn\'t be for sale but here we go'
         },
